@@ -1,0 +1,22 @@
+.myCard {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 20px !important;
+  background-image: linear-gradient(to right, #341f97, #5f27cd);
+  color: white;
+}
+.myCard h5 {
+  font-size: 50px !important;
+  margin-bottom: 20px;
+}
+.myButton {
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  padding: 5px 50px;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
