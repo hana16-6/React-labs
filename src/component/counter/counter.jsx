@@ -16,8 +16,8 @@ function Counter() {
   return (
     <div>
       <div className="d-flex justify-content-center my-5">
-        <div class="card myCard justify-content-center">
-          <h5 class="card-title">{counter}</h5>
+        <div className="card myCard justify-content-center">
+          <h5 className="card-title">{counter}</h5>
           <CounterAction incrementFun={increment} decrementFun={decrement} />
         </div>
       </div>
