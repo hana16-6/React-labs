@@ -14,27 +14,30 @@ const TodoForm = ({ addTodo }) => {
   return (
     <div>
       <h3 className="text-muted mb-4">Add a TODO</h3>
+      <div>
+        <form className=" w-50 m-auto" onSubmit={handleSubmission}>
+          <label>Title</label>
+          <input
+            className="form-control my-4"
+            type="text"
+            name="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
 
-      <form onSubmit={handleSubmission}>
-        Title <br />
-        <input
-          type="text"
-          name="title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <br />
-        Content <br />
-        <textarea
-          name="content"
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-        ></textarea>
-        <br />
-        <button className="my-4 btn btn-primary btn-sm px-4" type="submit">
-          Add Todo
-        </button>
-      </form>
+          <label className="form-label">Content</label>
+          <textarea
+            className="form-control my-4"
+            name="content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          ></textarea>
+
+          <button className="my-4 btn btn-primary btn-sm px-4" type="submit">
+            Add Todo
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

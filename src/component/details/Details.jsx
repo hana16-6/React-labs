@@ -25,8 +25,8 @@ export default function Details({ match }) {
               <h5> {Product.title}</h5>
               <p> Price: {Product.price}</p>
               <p> Rate: {Product.rating.rate}</p>
-              <p> Rate: {Product.category}</p>
-              <p> Rate: {Product.description}</p>
+              <p> Category: {Product.category}</p>
+              <p> Description: {Product.description}</p>
             </div>
           </div>
         </div>

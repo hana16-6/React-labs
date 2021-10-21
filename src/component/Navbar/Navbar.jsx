@@ -25,7 +25,9 @@ export default function Navbar() {
             <Link className="text-decoration-none text-light" to="/counter">
               Counter
             </Link>
-            <Link as={Link} to="/todo">
+          </li>
+          <li className="px-2">
+            <Link className="text-decoration-none text-light" to="/todo">
               Todo-list
             </Link>
           </li>
