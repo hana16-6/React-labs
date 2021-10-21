@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-dark bg-dark">
       <div className="d-flex w-100">
         <div className="w-25">
           <Link className="text-decoration-none text-light" to="/">
@@ -24,6 +24,9 @@ export default function Navbar() {
           <li className="px-2">
             <Link className="text-decoration-none text-light" to="/counter">
               Counter
+            </Link>
+            <Link as={Link} to="/todo">
+              Todo-list
             </Link>
           </li>
         </ul>

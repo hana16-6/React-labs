@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './component/home/Home';
 import Shop from './component/shop/Shop';
 import Details from './component/details/Details'
+import TodoList from "./views/todo/Todo";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route component={Counter} path="/counter" />
           <Route component={Shop} path="/shop" />
           <Route component={Details} path="/details/:id" />
+          <Route component={TodoList} path="/todo" />
         </Switch>
       </div>
     </Router>

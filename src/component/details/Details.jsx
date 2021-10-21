@@ -6,7 +6,7 @@ export default function Details({ match }) {
   const [Product, setProduct] = useState(null);
   useEffect(() => {
     getProductDetails();
-  }, []);
+  });
   const getProductDetails = () => {
     fetch(`https://fakestoreapi.com/products/${match.params.id}`)
       .then((res) => res.json())
