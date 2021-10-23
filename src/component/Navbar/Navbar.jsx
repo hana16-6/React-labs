@@ -31,6 +31,16 @@ export default function Navbar() {
               Todo-list
             </Link>
           </li>
+          <li className="px-2">
+            <Link className="text-decoration-none text-light" to="/login">
+              Login
+            </Link>
+          </li>
+          <li className="px-2">
+            <Link className="text-decoration-none text-light" to="/register">
+              Register
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

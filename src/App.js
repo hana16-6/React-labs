@@ -7,6 +7,8 @@ import Home from './component/home/Home';
 import Shop from './component/shop/Shop';
 import Details from './component/details/Details'
 import TodoList from "./views/todo/Todo";
+import LoginForm from './component/login/LoginForm'
+import Register from './component/register/Register';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route component={Shop} path="/shop" />
           <Route component={Details} path="/details/:id" />
           <Route component={TodoList} path="/todo" />
+          <Route component={LoginForm} path="/login" />
+          <Route component={Register} path="/register" />
         </Switch>
       </div>
     </Router>
